@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<meta charset = "utf-8">
+		<title> CADASTRAR PET </title>
+		<link href="reset.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="posicao-relativa">
+            <header>
+                <h1>TAKE A PET</h1>
+                <img src="./pictures/dog-and-cat.png" alt="icon">
+                <nav id="menu">
+					<ul>
+						<li><a href="main-page.html">Home</a></li>
+						<li><a href="como-funciona.html">Como funciona</a></li>
+						<li><a href="quero-adotar.html">Quero adotar</a></li>
+						<li><a href="cadastrar-usuario.html">Quero doar</a></li>
+					</ul>
+                </nav>
+            </header>
+        </div>	
+		<div id="principal">
+			<img class="seta" src="./pictures/seta.png" alt="seta">
+			<h2>CADASTRO PET</h2>
+			<form method="post" enctype="multipart/form-data" action="upload.asp">
+				<div class="cadastro-pet">
+					<div class="cad-pet">
+						<label for="chk_E_C">Espécie: </label>
+						<input type="checkbox" name="prefs[]" id="chk_E_C" value="E_C" />Cachorro
+						<input type="checkbox" name="prefs[]" id="chk_E_G" value="E_G" />Gato
+						<input type="checkbox" name="prefs[]" id="chk_E_O" value="E_O" />Outro
+					</div>
+					<div class="cad-pet">
+						<label for="rd_Ma">Sexo: </label>
+						<input type="radio" name="sexo" id="rd_Ma" value="Ma" />Macho
+						<input type="radio" name="sexo" id="rd_Fe" value="Fe" />Fêmea
+					</div>
+					<div class="cad-pet">
+						<label for="txt_cor">Coloração da pelagem do Pet: </label>
+						<input type="text" name="cor" id="txt_cor" />
+					</div>
+					<div class="cad-pet">
+						<label for="rd_Medi">Porte: </label>
+						<input type="radio" name="porte" id="rd_Gra" value="Gr" />Grande
+						<input type="radio" name="porte" id="rd_Medi" value="Medi" />Médio
+						<input type="radio" name="porte" id="rd_Pe" value="Pe" />Pequeno 
+						<input type="radio" name="porte" id="rd_Ns" value="Ns" />Não Sei
+					</div>
+					<div class="cad-pet">
+						<label for="txt_end">O Pet possui raça definida? Se sim, qual?</label>
+						<input type="text" name="end" id="txt_end" />
+					</div>
+					<div class="cad-pet">
+					<label for="rd_Idoso">Idade: </label>
+						<input type="radio" name="idade-pet" id="rd_Idoso" value="Idoso" />Idoso
+						<input type="radio" name="idade-pet" id="rd_Adulto" value="Adulto" />Adulto
+						<input type="radio" name="idade-pet" id="rd_Filhote" value="Filhote" />Filhote 
+						<input type="radio" name="idade-pet" id="rd_NS" value="NS" />Não Sei
+					</div>
+					<div class="cad-pet">				
+						<label for="rd_Sim">Pet precisa de cuidados veterinários? </label>
+						<input type="radio" name="vet" id="rd_Sim" value="Sim" />Sim
+						<input type="radio" name="vet" id="rd_Nao" value="Nao" />Não
+					</div>
+					<div class="cad-pet">
+						<label for="rd_N">Pet foi encontrado com machucados ou sinais de maus tratos? </label>
+						<input type="radio" name="maustrat" id="rd_S" value="S" />Sim
+						<input type="radio" name="maustrat" id="rd_N" value="N" />Não
+					</div>
+					<div class="cad-pet">				
+						<label for="rd_Si">Somente para Fêmeas: Pet está no cio? </label>
+						<input type="radio" name="cio" id="rd_Si" value="Si" />Sim
+						<input type="radio" name="cio" id="rd_Na" value="Na" />Não
+						<input type="radio" name="cio" id="rd_NaoS" value="NaoS" />Não Sei
+					</div>
+					<div class="cad-pet">	
+						<label for="rd_NF">Somente para Fêmeas: Pet está prenha? </label>
+						<input type="radio" name="prenha" id="rd_SF" value="SF" />Sim
+						<input type="radio" name="prenha" id="rd_NF" value="NF" />Não
+						<input type="radio" name="prenha" id="rd_NSF" value="NSF" />Não Sei
+					</div>
+					<div class="cad-pet">					
+						<label for="rd_Adocao">Tipo de ajuda: </label>
+						<input type="radio" name="tipoajuda" id="rd_Adocao" value="Adocao" />Adoção
+						<input type="radio" name="tipoajuda" id="rd_Apadri" value="Apadri" />Apadrinhamento
+						<input type="radio" name="tipoajuda" id="rd_Indiferente" value="Indiferente" />Indiferente
+					</div>
+					<div class="cad-pet">
+						<label for ="info-pet">Mais informações sobre o Pet: </label>
+						<textarea name="info-pet" id="info-pet" rows="5" cols="40">Mais informações sobre o Pet</textarea>
+					</div>
+					<div class="cad-pet">
+						<label for="data">Data que o Pet foi encontrado: </label>
+						<input type="date" name="data" id="data" />
+					</div>
+					<div class="cad-pet">
+					<label for="txt_reg">Região: </label>
+						<select name="reg" id="txt_reg">
+							<option value="ZS">Zona Sul</option>
+							<option value="ZL">Zona Leste</option>
+							<option value="ZN">Zona Norte</option>
+							<option value="C">Centro</option>
+						</select>
+					</div>
+					<div class="cad-pet">
+						<label for="txt_endpet">Endereço: </label>
+						<input type="text" name="endpet" id="txt_endpet" />
+					</div>
+					<div class="cad-pet">
+						<label for ="desc-area">Descrição do local onde o Pet foi encontrado: </label>
+						<textarea name="desc-area" id="desc-area" rows="5" cols="40">Mais informações sobre o local</textarea>
+					</div>	
+					<input type="file" size="40" name="foto">
+					<div class ="botoes">
+						<input class="bt" type="reset" value ="Redefinir" />
+						<input class="bt" type="submit" value ="Cadastrar Pet" />
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<p>Copyright &copy; 2017 ~ Take a pet ~ Grupo 3 ~ All Rights Reserved</p>
+		</footer>
+	</body>
+</html>
